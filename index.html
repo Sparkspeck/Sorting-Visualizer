@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-4HHP888F7Y"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-4HHP888F7Y');
+	</script>
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sorting Visualizer</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+        <!-- CSS only -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="navbar dark-background">
+        <a class="navbar-brand text-color"  style="margin-left: 600px ; font-family: monospace;color: rgb(95, 11, 231); font-size: 30px;" >Bubble Sort Visualizer</a>
+         <!--Navbar = Sorting Visualizer-->  
+    </nav>
+
+    <div id="sorting" class="flex-container">
+        
+    </div>
+
+        <!-- Labels not working >:(-->
+        <div class="col range-input" id="input-panel">
+            <span id="size" class = "label">
+                <input id ="size_input" type="range" value=50 min="1" max="100" style="margin-left: 0px;"> <!--Bar slider-->
+            </span>
+            <span id="speed" class = "label">Speed
+                <input id="speed_input" type="range"  min="20" max="300" value=60 style="margin-left: 0px;"> <!--Speed slider-->
+            </span>
+        </div>
+
+        <div class="btn-group-md btn-group-horizontal center" style="margin-bottom: 15px;">
+            <button type="button" class="btn btn-outline-success new"  style="margin-right: 55px; background-color: aquamarine; border-radius: 19px;">New Array</button>  <!-- New Array -->
+            <button type="button" class="btn btn-outline-danger stop" style="margin-left: 1px; border-radius: 19px; background-color: red; color: antiquewhite;" disabled="true">Stop Sorting</button> <!-- Stop sorting-->
+        </div>
+        <div class="col-auto center" id="control-panel">
+            <div class="btn-group-md btn-group-vertical">
+                <button type="button" class="btn btn-outline-light bubbleSort" style= "border-radius: 19px; background-color: lightskyblue ">Bubble Sort</button> <!-- Bubble Sort -->
+            </div>
+            
+           
+        </div>
+   
+    <script src="sorting.js" async defer></script>
+    <script src="algorithms/bubbleSort.js" async defer></script>
+   
+</body>
+
+</html>
